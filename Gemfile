@@ -7,7 +7,9 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
-gem 'devise'
+gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
+gem 'omniauth'
+
 
 group :test do
   gem 'cucumber'

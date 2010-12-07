@@ -1,8 +1,11 @@
 CrankAppsTest::Application.routes.draw do
+
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   
+  resources :users
+
   get "home/index"
 
-  devise_for :users
 
   root :to => "home#index"
   # The priority is based upon order of creation:

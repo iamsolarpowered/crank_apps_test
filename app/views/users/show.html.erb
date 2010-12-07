@@ -1,0 +1,8 @@
+
+<h1>
+  <%= image_tag @user.facebook_photo_url rescue nil %>
+  <%= @user.email %>
+</h1>
+
+<div id="name"><%= @user.name %></div>
+<div id="bio"><%= @user.bio %></div>

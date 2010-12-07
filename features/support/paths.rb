@@ -14,6 +14,8 @@ module NavigationHelpers
       users_path
     when /the signup page/
       new_user_registration_path
+    when /my profile/
+      user_path(User.first)
 
 
     # Add more mappings here.
