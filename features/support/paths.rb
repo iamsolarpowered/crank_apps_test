@@ -15,7 +15,7 @@ module NavigationHelpers
     when /the signup page/
       new_user_registration_path
     when /my profile/
-      user_path(User.first)
+      user_path User.find_by_email('jsmith@example.com')
 
 
     # Add more mappings here.
