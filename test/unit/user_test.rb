@@ -28,7 +28,7 @@ class UserTest < ActiveSupport::TestCase
         'user_hash' => {
           'name' => 'Joe Smith',
           'email' => 'joe@test.com',
-          'id' => 1234567,
+          'id' => '1234567',
           'bio' => 'I am awesome!!!'
         }
       }
